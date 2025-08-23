@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crodyto – Promotional Poster</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0a0a0a;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #fff;
+      flex-direction: column;
+    }
+
+    .poster {
+      width: 95%;
+      max-width: 1080px;
+      min-height: 80vh;
+      background: linear-gradient(135deg, #111, #000);
+      border-radius: 20px;
+      box-shadow: 0 0 40px rgba(255, 0, 128, 0.4);
+      padding: 5vw;
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .poster::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: conic-gradient(#ff0080, #ff8c00, #ffd300, #3fe0a3, #00b3ff, #8a5cff, #ff0080);
+      animation: spin 12s linear infinite;
+      filter: blur(100px);
+      opacity: 0.4;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .poster-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+
+    .poster-logo img {
+      max-width: 60%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .brand {
+      font-size: clamp(2rem, 8vw, 5rem);
+      font-weight: 900;
+      background: linear-gradient(to bottom, #fff, rgba(255,255,255,0.6));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 0;
+    }
+
+    .tagline {
+      font-size: clamp(1rem, 4vw, 2rem);
+      color: rgba(255,255,255,0.8);
+      margin-top: 10px;
+    }
+
+    .offer {
+      margin: 30px auto;
+      padding: 15px 20px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.15);
+      display: inline-block;
+      max-width: 90%;
+    }
+
+    .offer-title {
+      font-size: clamp(0.8rem, 3vw, 1.2rem);
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 5px;
+    }
+
+    .offer-text {
+      font-size: clamp(1.2rem, 6vw, 2.5rem);
+      font-weight: 800;
+    }
+
+    .launch {
+      font-size: clamp(1rem, 4.5vw, 2rem);
+      font-weight: bold;
+      color: #ffdf40;
+      margin-top: 30px;
+    }
+
+    .subline {
+      font-size: clamp(0.9rem, 3.5vw, 1.5rem);
+      color: rgba(255,255,255,0.75);
+      margin: 25px 0;
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 12px 25px;
+      border-radius: 12px;
+      background: #fff;
+      color: #000;
+      font-weight: bold;
+      font-size: clamp(1rem, 4vw, 1.5rem);
+      text-decoration: none;
+      box-shadow: 0 6px 15px rgba(255,255,255,0.2);
+      transition: transform 0.2s ease;
+    }
+    .cta:hover {
+      transform: scale(1.05);
+    }
+
+    .footer {
+      position: relative;
+      margin-top: 30px;
+      text-align: center;
+      font-size: clamp(0.8rem, 3vw, 1.2rem);
+      color: rgba(255,255,255,0.6);
+    }
+
+    /* Extra tweaks for very small screens */
+    @media (max-width: 480px) {
+      .poster {
+        padding: 20px;
+        border-radius: 15px;
+      }
+      .offer {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="poster">
+    <div class="poster-content">
+      <div class="poster-logo">
+        <img src="crodyto.png" alt="Crodyto Logo" />
+      </div>
+      <h1 class="brand">Online Clothing</h1>
+      <div class="tagline">🚀 Start your shopping now!</div>
+
+      <div class="offer">
+        <div class="offer-title">Limited Offer</div>
+        <div class="offer-text">First 100 Customers Get 20% OFF</div>
+      </div>
+
+      <div class="launch">🚀 Launching Soon – Stay Tuned!</div>
+
+      <div class="subline">Trendy • Affordable • Fast Delivery</div>
+      <a href="https://crodyto.github.io/WEBSITE-IS-UNDER-CONSTRUCTION/" target="_blank" class="cta">Shop Now</a>
+    </div>
+    <div class="footer">Follow & Shop @crodyto</div>
+  </div>
+</body>
+</html>
